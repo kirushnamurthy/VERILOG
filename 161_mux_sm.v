@@ -1,0 +1,21 @@
+module muuuxxx(y,d,s0,s1,s2,s3);
+output y;
+input [14:0]d;
+input s0,s1,s2,s3;
+wire [14:1]w;
+muuxx m1(w1,s0,d0,d1);
+muuxx m2(w2,s0,d2,d3);
+muuxx m3(w3,s0,d4,d5);
+muuxx m4(w4,s0,d6,d7);
+muuxx m5(w5,s0,d8,d9);
+muuxx m6(w6,s0,d10,d11);
+muuxx m7(w7,s0,d12,d13);
+muuxx m8(w8,s0,d14,d15);
+muuxx m9(w9,s1,w1,w2);
+muuxx m10(w10,s1,w3,w4);
+muuxx m11(w11,s1,w5,w6);
+muuxx m12(w12,s1,w7,w8);
+muuxx m13(w13,s2,w9,w10);
+muuxx m14(w14,s2,w11,w12);
+muuxx m15(y,s3,w13,w14);
+endmodule
